@@ -1,6 +1,6 @@
 const fs = require('fs');
 var scores = [];
-for(r = 0; r < 26; r++) {
+for(r = 0; r <= 25; r++) {
 	console.clear();
 	console.log(`This may take a while depending on your device... [${r}/25]`);
 	run();
@@ -8,7 +8,7 @@ for(r = 0; r < 26; r++) {
 
 function run() {
 	startTime = Date.now();
-	for(i = 0; i < 1000000; i++) {
+	for(i = 0; i <= 1000000; i++) {
 		i.toString(2);
 	}
 	endTime = Date.now();
